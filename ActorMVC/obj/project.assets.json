@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/faheemshams/Projects/C#/untitled folder/MvcApp.csproj",
+      "projectUniqueName": "/Users/faheemshams/Projects/C#/ActorMVC/MvcApp.csproj",
       "projectName": "MvcApp",
-      "projectPath": "/Users/faheemshams/Projects/C#/untitled folder/MvcApp.csproj",
+      "projectPath": "/Users/faheemshams/Projects/C#/ActorMVC/MvcApp.csproj",
       "packagesPath": "/Users/faheemshams/.nuget/packages/",
-      "outputPath": "/Users/faheemshams/Projects/C#/untitled folder/obj/",
+      "outputPath": "/Users/faheemshams/Projects/C#/ActorMVC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/faheemshams/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vugp700QVFc75Zfors/NJWdduWF++01Qt7jbZDjbkPqsAOn09y4I9cdVq4vBYgWHfda6HBPkSchtjmOoKIIPyw==",
+  "dgSpecHash": "xok/HfVnDG50eIE63T+X695F95i1noQxcUd/g63OfqonILsMgBSeWj4emFD0U5RL9dWmqMSVVBrNE0guojEelQ==",
   "success": true,
-  "projectFilePath": "/Users/faheemshams/Projects/C#/untitled folder/MvcApp.csproj",
+  "projectFilePath": "/Users/faheemshams/Projects/C#/ActorMVC/MvcApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
