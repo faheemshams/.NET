@@ -1,4 +1,5 @@
-﻿namespace MvcApp;
+﻿using MvcApp.Data;
+namespace MvcApp;
 
 public class Program
 {
@@ -8,6 +9,10 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+
+        //DbContext Configuration
+        builder.Services.AddDbContext<AppDbContext>();
+
 
         var app = builder.Build();
 
