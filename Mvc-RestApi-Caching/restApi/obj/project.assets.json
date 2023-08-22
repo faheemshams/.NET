@@ -2232,11 +2232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\restApi\\restApi.csproj",
+      "projectUniqueName": "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\restApi\\restApi.csproj",
       "projectName": "restApi",
-      "projectPath": "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\restApi\\restApi.csproj",
+      "projectPath": "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\restApi\\restApi.csproj",
       "packagesPath": "C:\\Users\\muhammedfaheem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\restApi\\obj\\",
+      "outputPath": "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\restApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

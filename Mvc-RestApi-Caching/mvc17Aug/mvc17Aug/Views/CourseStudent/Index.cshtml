@@ -1,0 +1,42 @@
+﻿@model IEnumerable<mvc17Aug.Models.CourseStudent>
+@inject IRepository<Student> studentRepo
+@inject IRepository<Course> courseRepo
+
+@{
+    ViewData["Title"] = "Student enrollment to Courses";
+}
+
+<h1>Enrollment of Students in various courses</h1>
+
+<p>
+    <a asp-action="Add">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Course)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => courseRepo.GetById(item.CourseID).CourseName)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => studentRepo.GetById(item.StudentID).StudentName)
+            </td>
+            <td>
+                <a asp-action="Update" asp-route-id="@item.CourseStudentID">Update</a> |
+                <a asp-action="Delete" asp-route-id="@item.CourseStudentID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

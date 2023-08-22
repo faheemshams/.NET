@@ -1,4 +1,4 @@
-namespace mvc17Aug.Models
+﻿namespace mvc17Aug.Models
 {
     public class ErrorViewModel
     {
