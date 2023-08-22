@@ -9,5 +9,6 @@ namespace mvc17Aug
         public DbSet<Course> Cources { get; set; }  
         public DbSet<Student> Students { get; set; }
         public DbSet<CourseStudent> CourseStudents { get; set; }
+        public DbSet<Users> Users { get; set; }   
     }
 }

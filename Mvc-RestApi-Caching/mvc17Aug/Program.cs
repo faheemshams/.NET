@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using mvc17Aug.Models;
 
@@ -15,9 +16,27 @@ namespace mvc17Aug
             builder.Services.AddScoped<IRepository<Student>, Repository<Student>>();
             builder.Services.AddScoped<IRepository<Course>, Repository<Course>>();
             builder.Services.AddScoped<IRepository<CourseStudent>, Repository<CourseStudent>>();
+            
+
+            builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", option =>
+            {
+                option.Cookie.Name = "MyCookieAuth";
+                option.LoginPath = "/User/Login";
+                option.AccessDeniedPath = "/User/AccessDenied";
+                option.ExpireTimeSpan = TimeSpan.FromSeconds(20);
+            });
+
+            builder.Services.AddAuthorization(option =>
+            {
+                 option.AddPolicy("AdminOnly", policy => policy
+                .RequireRole("admin"));
+
+                option.AddPolicy("ProbationOver", policy => policy
+                .Requirements.Add(new ProbationChecker(1)));
+            });
 
 
-
+            builder.Services.AddScoped<IAuthorizationHandler, EmployeementDateAuthorizationHandler>();
             builder.Services.AddDbContext<DatabaseContext>(options =>
             options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
             var app = builder.Build();
@@ -35,11 +54,12 @@ namespace mvc17Aug
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Course}/{action=index}/{id?}");
+                pattern: "{controller=User}/{action=Login}/{id?}");
 
             app.Run();
         }
