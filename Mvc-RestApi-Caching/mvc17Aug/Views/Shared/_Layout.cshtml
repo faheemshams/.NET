@@ -28,6 +28,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Course" asp-action="Index">Course</a>
                         </li>
+                        <li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <form method="post">
+                                    Welcome @User.Identity.Name
+                                    <a class="ml-2 nav-link text-dark" asp-area="" asp-controller="User" asp-action="LogOut">Log out</a>
+                                </form>
+                            }
+                            else
+                            {
+                                <a class="btn" asp-controller="Models" asp-action="Login">Login</a>
+                            }
+                        </li>
                     </ul>
                 </div>
             </div>

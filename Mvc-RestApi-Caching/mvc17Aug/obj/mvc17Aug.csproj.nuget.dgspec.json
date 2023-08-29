@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\mvc17Aug\\mvc17Aug.csproj": {}
+    "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\mvc17Aug\\mvc17Aug.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\mvc17Aug\\mvc17Aug.csproj": {
+    "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\mvc17Aug\\mvc17Aug.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\mvc17Aug\\mvc17Aug.csproj",
+        "projectUniqueName": "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\mvc17Aug\\mvc17Aug.csproj",
         "projectName": "mvc17Aug",
-        "projectPath": "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\mvc17Aug\\mvc17Aug.csproj",
+        "projectPath": "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\mvc17Aug\\mvc17Aug.csproj",
         "packagesPath": "C:\\Users\\muhammedfaheem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muhammedfaheem\\source\\repos\\mvc17Aug\\mvc17Aug\\obj\\",
+        "outputPath": "C:\\Users\\muhammedfaheem\\Documents\\GitHub\\.NET\\Mvc-RestApi-Caching\\mvc17Aug\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

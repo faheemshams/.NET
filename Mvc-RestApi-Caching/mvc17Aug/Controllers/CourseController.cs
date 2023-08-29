@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using mvc17Aug.Models;
 
 namespace mvc17Aug.Controllers
 {
+    [Authorize(Roles = "professor, admin")]
     public class CourseController : Controller
     {
         private readonly IRepository<Course> _repository;
@@ -18,7 +20,7 @@ namespace mvc17Aug.Controllers
             return View(data); 
         }
    
-        [HttpGet]
+        [Authorize(Policy = "ProbationOver")]
         public IActionResult Add()
         {
             return View();
@@ -32,13 +34,16 @@ namespace mvc17Aug.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "AdminOnly")]
         public IActionResult Delete(int id) {
-            var course = _repository.GetAll().Where(x => x.CourseID == id).Single();
+            var course = _repository.GetAll().Where(x => x.CourseID == id).FirstOrDefault();
+            _repository.Delete(id);
             return View("Delete",course);
         }
 
 
         [HttpPost]
+        
         public IActionResult Delete(Course course)
         {
             _repository.Delete(course.CourseID);

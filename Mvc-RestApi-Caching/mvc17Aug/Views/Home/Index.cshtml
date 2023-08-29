@@ -4,5 +4,20 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <div>
+        <a asp-controller="Student" asp-action="Index">Student Management</a>
+    </div>
+
+    <div>
+        <a asp-controller="Course" asp-action="Index">Course Management</a>
+    </div>
+
+    <div>
+        <a asp-controller="CourseStudent" asp-action="Index">Enrollment Management</a>
+    </div>
+
+    <div>
+        The current time is: @Model
+    </div>
 </div>
