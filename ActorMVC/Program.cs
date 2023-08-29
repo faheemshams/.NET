@@ -1,4 +1,5 @@
-﻿using MvcApp.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using MvcApp.Data;
 namespace MvcApp;
 
 public class Program
@@ -11,8 +12,7 @@ public class Program
         builder.Services.AddControllersWithViews();
 
         //DbContext Configuration
-        builder.Services.AddDbContext<AppDbContext>();
-
+        builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnectionString"));
 
         var app = builder.Build();
 
@@ -34,6 +34,9 @@ public class Program
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
+
+        //Seed database
+        AppDbInitializer.Seed(app);
 
         app.Run();
     }

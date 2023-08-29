@@ -7,10 +7,14 @@ namespace MvcApp.Models
 	{
 		[Key]
 		public int ActorID { get; set; }
+		[Display(Name ="Profile Picture URL")]
 		public string ProfilePictureURL { get; set; }
-		public string FullName { get; set; }
-		public string Bio { get; set; }
+        [Display(Name = "Full Name")]
+        public string FullName { get; set; }
+        [Display(Name = "Biography")]
+        public string Bio { get; set; }
 
+		public List<Movie> Movies { get; set; }
 		public List<ActorMovie> ActorMovies { get; set; }
 	}
 }
