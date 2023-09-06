@@ -16,78 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\muhammedfaheem\Documents\GitHub\.NET\Mvc-RestApi-Caching\mvc17Aug
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/CourseStudent/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlU3R1ZGVudFxBZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/CourseStudent/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlU3R1ZGVudFxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/CourseStudent/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlU3R1ZGVudFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/CourseStudent/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlU3R1ZGVudFxVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Course/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlXEFkZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Course/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Course/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Course/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcQ291cnNlXFVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Student/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcU3R1ZGVudFxBZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Student/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Student/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Student/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcU3R1ZGVudFxVcGRhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/Views/CourseStudent/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlU3R1ZGVudFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -167,10 +95,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/mvc17Aug/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = bXZjMTdBdWdcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-bncs9lovl7
 
 [C:/Users/muhammedfaheem/Documents/GitHub/.NET/Mvc-RestApi-Caching/mvc17Aug/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

@@ -8,10 +8,12 @@ namespace mvc17Aug.Controllers
     public class CourseController : Controller
     {
         private readonly IRepository<Course> _repository;
+        private readonly ILogger _logger;
 
-        public CourseController(IRepository<Course> repository)
+        public CourseController(IRepository<Course> repository, ILogger _logger)
         {
-            _repository = repository;
+            this._repository = repository;
+            this._logger = _logger;
         }
         
         public IActionResult Index()
@@ -30,6 +32,7 @@ namespace mvc17Aug.Controllers
         public IActionResult Add(Course course)
         {
             _repository.Add(course);
+            _logger.AddLog(1, "added course");
             return View("Index", _repository.GetAll());
         }
 
@@ -41,12 +44,11 @@ namespace mvc17Aug.Controllers
             return View("Delete",course);
         }
 
-
         [HttpPost]
-        
         public IActionResult Delete(Course course)
         {
             _repository.Delete(course.CourseID);
+            _logger.AddLog(1, "Deleted Course");
             return View("Index", _repository.GetAll());
         }
 
@@ -65,6 +67,7 @@ namespace mvc17Aug.Controllers
             item.CourseCredit = course.CourseCredit;
             item.CourseDescription = course.CourseDescription;
             _repository.Update(item);
+            _logger.AddLog(1, "updated Course");
             return View("Index", _repository.GetAll());
         }
     }
