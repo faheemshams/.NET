@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using mvc17Aug;
 
@@ -11,9 +12,10 @@ using mvc17Aug;
 namespace mvc17Aug.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230822125931_new1")]
+    partial class new1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,16 +81,24 @@ namespace mvc17Aug.Migrations
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Log")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("LogType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserID")
+                    b.Property<string>("UserID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserID1")
                         .HasColumnType("int");
 
                     b.HasKey("LogID");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserID1");
 
                     b.ToTable("Logger");
                 });
@@ -159,13 +169,13 @@ namespace mvc17Aug.Migrations
 
             modelBuilder.Entity("mvc17Aug.Models.Logger", b =>
                 {
-                    b.HasOne("mvc17Aug.Models.Users", "User")
+                    b.HasOne("mvc17Aug.Models.Users", "user")
                         .WithMany()
-                        .HasForeignKey("UserID")
+                        .HasForeignKey("UserID1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("user");
                 });
 #pragma warning restore 612, 618
         }

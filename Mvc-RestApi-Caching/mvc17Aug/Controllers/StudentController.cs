@@ -7,10 +7,12 @@ namespace mvc17Aug.Controllers
     public class StudentController : Controller
     {
         private readonly IRepository<Student> _repository;
+        private readonly ILogger _logger;
 
-        public StudentController(IRepository<Student> repository)
+        public StudentController(IRepository<Student> repository, ILogger logger)
         {
             _repository = repository;
+            _logger = logger;
         }
 
         public IActionResult Index()
@@ -29,6 +31,7 @@ namespace mvc17Aug.Controllers
         public IActionResult Add(Student student)
         {
             _repository.Add(student);
+            _logger.AddLog(1, "Added student");
             return View("Index", _repository.GetAll());
         }
 
@@ -43,6 +46,7 @@ namespace mvc17Aug.Controllers
         public IActionResult Delete(Student student)
         {
             _repository.Delete(student.StudentID);
+            _logger.AddLog(1, "Deleted Student");
             return View("Index", _repository.GetAll());
         }
 
@@ -61,6 +65,7 @@ namespace mvc17Aug.Controllers
             item.StudentName = student.StudentName;
             item.StudentPhone = student.StudentPhone;
             _repository.Update(item);
+            _logger.AddLog(1, "updated Student");
             return View("Index", _repository.GetAll());
         }
     }

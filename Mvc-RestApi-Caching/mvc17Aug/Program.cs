@@ -16,7 +16,8 @@ namespace mvc17Aug
             builder.Services.AddScoped<IRepository<Student>, Repository<Student>>();
             builder.Services.AddScoped<IRepository<Course>, Repository<Course>>();
             builder.Services.AddScoped<IRepository<CourseStudent>, Repository<CourseStudent>>();
-            
+            builder.Services.AddSingleton<IRepository<Logger>, Repository<Logger>>();
+            builder.Services.AddSingleton<ILogger, DatabaseLogger>();
 
             builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", option =>
             {
@@ -38,7 +39,7 @@ namespace mvc17Aug
 
             builder.Services.AddScoped<IAuthorizationHandler, EmployeementDateAuthorizationHandler>();
             builder.Services.AddDbContext<DatabaseContext>(options =>
-            options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
+            options.UseSqlServer("name=ConnectionStrings:DefaultConnection"), ServiceLifetime.Singleton);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
